@@ -1,0 +1,216 @@
+---
+title: Portfolio
+sidebar_position: 1
+---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+{/* >#### *Saying this upfront. This portfolio is intended for my personal use when applying to any position I'm looking for; It is not meant for seeking employment or commissions via devforum.* */}
+
+
+## About me
+Hello! I'm a proficient scripter with 5+ years of experience.
+I first began with building late 2019 and later learned scripting - around April 2020 - as it was a necessity for me to achieve what I wished to create with my builds at the time. Later on, I found my passion in scripting.
+
+I excel at writing maintainable and efficient code, I'm quick at adapting to unfamiliar code, reading and organizing messy codebases, and learning new concepts whenever needed.\
+My main focus is designing and making backend systems as well as plugins, though I can do most of everything else.
+
+<div class='separatorline'/>
+
+## Previous work
+Here are some examples of things I previously worked on.
+
+### Games
+
+1. [Project: SCP](https://www.roblox.com/games/5534891288/Project-SCP).
+1. [Spontaneous Generation](https://www.roblox.com/games/4802391478/Spontaneous-Generation).
+
+<div class='separatorline'/>
+
+### Public / Open Source
+1. [BufferEncoder](https://devforum.roblox.com/t/bufferencoder-very-efficient-table-to-buffer-serializer-that-doesn’t-use-schemas/3584699?silent=true) (Module)
+This is a module that serializes any form of table you provide to it into a buffer as efficiently as possible without relying on schemas unlike the majority of the other publicly available serializers. 
+It supports all datatypes you'd realistically have in a table and can be easily modified for any of your needs.
+--- 
+
+1. [DevRoam](https://devforum.roblox.com/t/devroam-move-around-with-your-character-as-if-playtesting/3753226?silent=true) (Plugin)
+This is a free plugin that lets you move around in studio with your own character, It attempts to mimic regular movement and camera behavior in edit mode as much as possible while providing extra handy features.
+
+1. [Squish](https://github.com/anexpia/Squish) (Module)
+This is a heavily modified fork of [Squash](https://github.com/Data-Oriented-House/Squash).\
+It comes with more types of SerDes (eg. instances, deduplication), and is more optimized.
+
+1. [MoreEditors](https://create.roblox.com/store/asset/8730655360/MoreEditors) (Plugin)
+A plugin that adds draggers for beams, lights, stellar bodies (sun & moon), and moving objects along 2 axes.
+
+<video controls class="basicimagestyle">
+  <source src={require('@site/static/videos/moreeditors_brief.mp4').default} type="video/mp4" />
+</video>
+
+5. [TextWrapper](https://devforum.roblox.com/t/textwrapper-a-module-to-wrap-text-into-lines-similar-to-textlabels/3637151?silent=true) (Module)
+This is a module that splits provided text into multiple lines efficiently.
+It supports rich text and can also provide offsets of characters to find within the text
+
+5. [Instance Saver](https://create.roblox.com/store/asset/12680363527/PSCP-RoomSaver-5) (Plugin) 
+<small>This one is mainly intended for loading custom builds within the game I work for. It cannot be used for anything else unless modified.</small> <br />
+It's an instance serializer that can perfectly serialize and deserialize instances while saving as much bandwidth as possible with compression and encryption of the data.
+
+5. [Unicode Text Filter](https://devforum.roblox.com/t/filter-out-unicode-characters-used-to-bypass-chat-filter/3659694) (Module)
+Replaces almost all instances of unicode text used for bypassing in chat with the regular characters in text.\
+It relies on Unicode.org's [ConfusablesSummary](https://www.unicode.org/Public/security/latest/confusablesSummary.txt) and is made to be future-compatible with any new updates to it, so long they don't change its format.
+
+<div class='separatorline'/>
+
+### Private
+1. **A networking module**
+It supports batching, network requests (i.e. reimplementation of remotefunctions) and more. Relies on **Squish**, mentioned above.<br />
+<Tabs defaultValue="definition">
+  <TabItem value="definition" label="1. Remote Definition">
+    <img 
+      src="/img/network_definition.png" 
+      alt="remote definition" 
+      class="basicimagestyle"
+    />
+  </TabItem>
+  <TabItem value="test" label="2. Test Case">
+     <img 
+      src="/img/network_test.png" 
+      alt="test code" 
+      class="basicimagestyle"
+    />
+  </TabItem>
+  <TabItem value="output" label="3. Output">
+     <img 
+      src="/img/network_output.png" 
+      alt="output" 
+      class="basicimagestyle"
+    />
+  </TabItem>
+  <TabItem value="sample" label="4. Part of code">
+    <img 
+      src="/img/network_smallsample.png" 
+      alt="code sample" 
+      class="basicimagestyle"
+    />
+    <p class='baseimagecaption'>
+      Partly collapsed.
+    </p>
+  </TabItem>
+</Tabs>
+
+2. **Spatial Hashmap**
+Faster alternative to standard roblox query functions (eg. workspace:GetPartBoundsInBox()).
+<Tabs defaultValue="video">
+  <TabItem value="video" label="1. Video">
+    <video controls class="basicimagestyle">
+        <source src={require('@site/static/videos/spatialhashmap.mp4').default} type="video/mp4" />
+    </video>    
+  </TabItem>
+  <TabItem value="sample" label="2. Part of code">
+   <img 
+      src="/img/spatialhashmapquerybox.png" 
+      alt="hashmap_querybox!" 
+      class="basicimagestyle"
+    />
+  </TabItem>
+</Tabs>
+
+3. Server-authoritative projectiles
+<video controls class="basicimagestyle">
+  <source src={require('@site/static/videos/lagcompbullets.mp4').default} type="video/mp4" />
+</video>
+<p class='baseimagecaption'>
+  Blue dots: **client** hit position\
+  Red dots: **server** hit position
+</p>
+
+<br />
+<br />
+
+4. **Seamless Rig Updater**
+Updates rigs instantly without using relying on Humanoid:ReplaceBodyPartR15() or risking humanoid dying when replacing torso / head.
+
+<video controls class="basicimagestyle">
+  <source src={require('@site/static/videos/characterloader.mp4').default} type="video/mp4" />
+</video>
+
+<br />
+
+<div class='separatorline'/>
+
+## Other images
+
+### UI
+<div style={{ 
+  display: 'flex', 
+  gap: '1rem', 
+  justifyContent: 'center', 
+  flexWrap: 'wrap',
+  marginTop: '2rem' 
+}}>
+  <div style={{ flex: '1', minWidth: '300px', maxWidth: '600px' }}>
+    <img 
+      src="/img/sg_logbook.png" 
+      alt="booky!" 
+      class="basicimagestyle"
+    />
+  </div>
+  <div style={{ flex: '1', minWidth: '300px', maxWidth: '600px' }}>
+    <img 
+      src="/img/sg_commandpanel.png" 
+      alt="cool stuff!" 
+      class="basicimagestyle"
+    />
+  </div>
+</div>
+
+### Modelling
+<div style={{ 
+  display: 'flex', 
+  gap: '1rem', 
+  justifyContent: 'center', 
+  flexWrap: 'wrap',
+  marginTop: '2rem' 
+}}>
+  <div style={{ flex: '1', minWidth: '300px', maxWidth: '600px' }}>
+    <img 
+      src="/img/sg_worldalter.png" 
+      alt="cool stuff!" 
+      class="basicimagestyle"
+    />
+    <p class='baseimagecaption'>
+      technically not a build, its procedurally generated but i just wanted to show it off.
+    </p>
+  </div>
+  <div style={{ flex: '1', minWidth: '300px', maxWidth: '600px' }}>
+    <img 
+      src="/img/pscp_689.png" 
+      alt="cool stuff!" 
+      class="basicimagestyle"
+    />
+  </div>
+  <div style={{ flex: '1', minWidth: '300px', maxWidth: '600px' }}>
+    <img 
+      src="/img/pscp_lczhallsideroom.png" 
+      alt="cool stuff!" 
+      class="basicimagestyle"
+    />
+  </div>
+  <div style={{ flex: '1', minWidth: '300px', maxWidth: '600px' }}>
+    <img 
+      src="/img/pscp_SLA.png" 
+      alt="cool stuff!" 
+      class="basicimagestyle"
+    />
+  </div>
+   <div style={{ flex: '1', minWidth: '300px', maxWidth: '600px' }}>
+    <img 
+      src="/img/pscp_propkit.png" 
+      alt="cool stuff!" 
+      class="basicimagestyle"
+    />
+    <p class='baseimagecaption'>
+      Prop kit used for **Project: SCP**. collaborative effort with multiple other people.
+    </p>
+  </div>
+</div>
