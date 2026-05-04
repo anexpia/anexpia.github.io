@@ -6,6 +6,7 @@ const config: Config = {
   title: 'anexpia',
   url: 'https://anexpia.github.io', 
   baseUrl: '',           
+  projectName: "anexpia.github.io",
   organizationName: 'anexpia',             
   deploymentBranch: 'gh-pages',
 
