@@ -5,7 +5,7 @@ export default function UnderConstruction(props: { text?: string }): JSX.Element
   return (
     <div className={styles.container}>
       <div className={styles.box}>
-        {props.text || "PAGE UNDER CONSTRUCTION"}
+        {props.text || "UNDER CONSTRUCTION"}
       </div>
     </div>
   );
