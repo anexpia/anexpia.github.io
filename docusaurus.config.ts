@@ -11,13 +11,17 @@ const config: Config = {
   deploymentBranch: 'gh-pages',
 
   tagline: 'stuff be here!',
-  favicon: 'img/favicon.ico',
+  favicon: '/img/favicon.ico',
 
   future: {
     v4: true, 
   },
 
   onBrokenLinks: 'throw',
+
+  plugins: [
+    'docusaurus-plugin-image-zoom', 
+  ],
 
   i18n: {
     defaultLocale: 'en',
@@ -59,8 +63,23 @@ const config: Config = {
       respectPrefersColorScheme: false,
     },
 
+    zoom: {
+      selector: '.zoom-image',
+      background: {
+        light: 'rgba(0, 0, 0, 0.9)',
+        dark: 'rgba(0, 0, 0, 0.9)',
+      },
+      config: {
+        margin: 32,
+      },
+    },
+
     navbar: {
-      title: 'anexpia',
+      //title: 'anexpia',
+      logo: {
+        alt: 'Site Logo',
+        src: 'img/cattyicon.png'
+      },
 
       items: [
           {

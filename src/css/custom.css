@@ -30,6 +30,11 @@
   box-shadow: none;
 }
 
+.navbar__logo {
+  height: 2.5rem;
+  width: auto;
+}
+
 .navbar__title {
   font-size: 1.75rem;      
   font-weight: 700;        
@@ -73,7 +78,11 @@
 .basicimagestyle {
   width: 100%;
   border-radius: 8px;
-  border: 2px solid var(--ifm-color-primary-darkest)
+  border: 2px solid var(--ifm-color-primary-darkest);
+}
+
+.basicimagestyle:hover {
+  border-color: var(--ifm-color-primary);
 }
 
 .baseimagecaption {
@@ -87,4 +96,19 @@
   border-bottom: 2px solid var(--ifm-color-primary);
   width: 100%;
   margin: 1.5rem auto
+}
+
+/* zoomable image */
+
+
+.medium-zoom-image--opened {
+  z-index: 1001;
+}
+
+.medium-zoom-overlay {
+  z-index: 1000;
+}
+
+.zoom-image {
+  /* nothing :silly: */
 }
