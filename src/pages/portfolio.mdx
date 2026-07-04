@@ -15,200 +15,184 @@ My main focus is designing and making backend systems as well as plugins, though
 
 <div class='separatorline'/>
 
-## Previous work
-Here are some examples of things I previously worked on.
+## Past Projects
+Here are examples of things I previously worked on.
 
 ### Games
 
-- [Project: SCP](https://www.roblox.com/games/5534891288/Project-SCP).
-- [Spontaneous Generation](https://www.roblox.com/games/4802391478/Spontaneous-Generation).
-
-<div class='separatorline'/>
-
-### Public / Open Source
-- [BufferEncoder](https://devforum.roblox.com/t/bufferencoder-very-efficient-table-to-buffer-serializer-that-doesn’t-use-schemas/3584699?silent=true) (Module)\
-This is a module that serializes any form of table you provide to it into a buffer as efficiently as possible without relying on schemas unlike the majority of the other publicly available serializers. 
-It supports all datatypes you'd realistically have in a table and can be easily modified for any of your needs.
---- 
-
-- [DevRoam](https://devforum.roblox.com/t/devroam-move-around-with-your-character-as-if-playtesting/3753226?silent=true) (Plugin)\
-This is a free plugin that lets you move around in studio with your own character, It attempts to mimic regular movement and camera behavior in edit mode as much as possible while providing extra handy features.
-
-- [Squish](https://github.com/anexpia/Squish) (Module)\
-This is a heavily modified fork of [Squash](https://github.com/Data-Oriented-House/Squash).\
-It comes with more types of SerDes (eg. instances, deduplication), and is more optimized.
-
-- [MoreEditors](https://create.roblox.com/store/asset/8730655360/MoreEditors) (Plugin)\
-A plugin that adds draggers for beams, lights, stellar bodies (sun & moon), and moving objects along 2 axes.
-
-<video controls class="basicimagestyle">
-  <source src={require('@site/static/videos/moreeditors_brief.mp4').default} type="video/mp4" />
-</video>
-
-- [TextWrapper](https://devforum.roblox.com/t/textwrapper-a-module-to-wrap-text-into-lines-similar-to-textlabels/3637151?silent=true) (Module)\
-This is a module that splits provided text into multiple lines efficiently.
-It supports rich text and can also provide offsets of characters to find within the text
-
-- [Instance Saver](https://create.roblox.com/store/asset/12680363527/PSCP-RoomSaver-5) (Plugin) \
-<small>This one is mainly intended for loading custom builds within the game I work for. It cannot be used for anything else unless modified.</small> <br />
-It's an instance serializer that can perfectly serialize and deserialize instances while saving as much bandwidth as possible with compression and encryption of the data.
-
-- [Unicode Text Filter](https://devforum.roblox.com/t/filter-out-unicode-characters-used-to-bypass-chat-filter/3659694) (Module)\
-Replaces almost all instances of unicode text used for bypassing in chat with the regular characters in text.\
-It relies on Unicode.org's [ConfusablesSummary](https://www.unicode.org/Public/security/latest/confusablesSummary.txt) and is made to be future-compatible with any new updates to it, so long they don't change its format.
-
-<div class='separatorline'/>
-
-### Private
-- **A networking module**\
-It supports batching, network requests (i.e. reimplementation of remotefunctions) and more. Relies on **Squish**, mentioned above.<br />
-<Tabs defaultValue="definition">
-  <TabItem value="definition" label="1. Remote Definition">
-    <img 
-      src="/img/network_definition.png" 
-      alt="remote definition" 
-      class="basicimagestyle zoom-image"
-    />
-  </TabItem>
-  <TabItem value="test" label="2. Test Case">
-     <img 
-      src="/img/network_test.png" 
-      alt="test code" 
-      class="basicimagestyle zoom-image"
-    />
-  </TabItem>
-  <TabItem value="output" label="3. Output">
-     <img 
-      src="/img/network_output.png" 
-      alt="output" 
-      class="basicimagestyle zoom-image"
-    />
-  </TabItem>
-  <TabItem value="sample" label="4. Part of code">
-    <img 
-      src="/img/network_smallsample.png" 
-      alt="code sample" 
-      class="basicimagestyle zoom-image"
-    />
-    <p class='baseimagecaption'>
-      Partly collapsed.
+<div class="game-card">
+  <img class="game-icon" src="/img/pscp_icon.png" alt="Project: SCP" />
+  <div>
+    <h4>[Project: SCP](https://www.roblox.com/games/5534891288/Project-SCP)</h4>
+    <p>
+      A round-based SCP game inspired by **SCP : SL**.\
+      I've been the main developer and maintainer of it since late 2021.
     </p>
-  </TabItem>
-</Tabs>
-
-- **Spatial Hashmap**\
-Faster alternative to standard roblox query functions (eg. workspace:GetPartBoundsInBox()).
-<Tabs defaultValue="video">
-  <TabItem value="video" label="1. Video">
-    <video controls class="basicimagestyle">
-        <source src={require('@site/static/videos/spatialhashmap.mp4').default} type="video/mp4" />
-    </video>    
-  </TabItem>
-  <TabItem value="sample" label="2. Part of code">
-   <img 
-      src="/img/spatialhashmapquerybox.png" 
-      alt="hashmap_querybox!" 
-      class="basicimagestyle zoom-image"
-    />
-  </TabItem>
-</Tabs>
-
-- Server-authoritative projectiles\
-<video controls class="basicimagestyle">
-  <source src={require('@site/static/videos/lagcompbullets.mp4').default} type="video/mp4" />
-</video>
-<p class='baseimagecaption'>
-  Blue dots: **client** hit position\
-  Red dots: **server** hit position
-</p>
-
-<br />
-<br />
-
-- **Seamless Rig Updater**
-Updates rigs instantly without using relying on `Humanoid:ReplaceBodyPartR15()` or risking humanoid dying when replacing torso / head.
-
-<video controls class="basicimagestyle">
-  <source src={require('@site/static/videos/characterloader.mp4').default} type="video/mp4" />
-</video>
-
-<br />
+  </div>
+</div>
+<div class="game-card">
+  <img class="game-icon" src="/img/sg_icon.png" alt="Spontaneous Generation" />
+  <div>
+    <h4>[Spontaneous Generation](https://www.roblox.com/games/4802391478/Spontaneous-Generation)</h4>
+    <p>
+      A sandbox game in which you survive events on ships made from blocks. It has alot of content and many updates to come.\
+      I started working on this since November 2025.
+    </p>
+  </div>
+</div>
 
 <div class='separatorline'/>
 
-## Other images
+### Plugins / Libraries
 
-### UI
-<div style={{ 
-  display: 'flex', 
-  gap: '1rem', 
-  justifyContent: 'center', 
-  flexWrap: 'wrap',
-  marginTop: '2rem' 
-}}>
-  <div style={{ flex: '1', minWidth: '300px', maxWidth: '600px' }}>
+<div class="project-grid">
+  <div class="project-card">
+      <h4>Plox</h4>
+      <p>
+        Custom coding language used in **Project: SCP**\
+        Supports many features such as classes, custom embedder datatypes and APIs, sandboxed Instance access with full control over what you can use and privilege identities.
+      </p>
+      <div class="project-card-media">
+        <video controls class="basicimagestyle">
+          <source src={require('@site/static/videos/pscploxdemo.mp4').default} type="video/mp4" />
+        </video>
+        <div class='baseimagecaption'>
+          Small example of its capabilities.\
+          P:SCP's community made many things that are honestly quite amazing.
+        </div>
+      </div>
+  </div>
+
+  <div class="project-card">
+    <h4>CSG Library</h4>
+    <p>
+      Uses EditableMesh & a CSG algorithm written in luau. Can handle thousands of triangles in a single frame.\
+      it uses a variant of Sutherland-Hodgman algorithm that only uses vectors to minimize memory allocations and be as performant as it is.
+    </p>
+    <div class="project-card-media">
+      <video controls class="basicimagestyle">
+        <source src={require('@site/static/videos/csgalgorithmv2-compressed.mp4').default} type="video/mp4" />
+      </video>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <h4>Server-authoritative projectiles</h4>
+    <div class="project-card-media">
+      <video controls class="basicimagestyle">
+        <source src={require('@site/static/videos/lagcompbullets.mp4').default} type="video/mp4" />
+      </video>
+      <div class='baseimagecaption'>
+        Blue dots: **client** hit position\
+        Red dots: **server** hit position
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <h4>[Markua](https://github.com/anexpia/markua)</h4>
+    <p>
+      A lightweight, tag-based markup text formatting system for Luau, inspired by XML/HTML.\
+    </p>
+    <div class="project-card-media">
+      <video controls class="basicimagestyle">
+        <source src={require('@site/static/videos/markuademo.mp4').default} type="video/mp4" />
+      </video>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <h4>[DevRoam](https://devforum.roblox.com/t/devroam-move-around-with-your-character-as-if-playtesting/3753226?silent=true)</h4>
+    <p>This is a plugin that lets you move around in studio with your own character. It emulates regular movement and camera behavior in edit mode as much as possible while providing extra handy features.</p>
+    <div class="project-card-media">
+      <video controls class="basicimagestyle">
+        <source src={require('@site/static/videos/devroamvid_3.mp4').default} type="video/mp4" />
+      </video>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <h4>[BufferEncoder](https://devforum.roblox.com/t/bufferencoder-very-efficient-table-to-buffer-serializer-that-doesn’t-use-schemas/3584699?silent=true)</h4>
+    <p>This is a module that serializes any form of table you provide to it into a buffer as efficiently as possible without relying on schemas unlike the majority of the other publicly available serializers. It supports all datatypes you'd realistically have in a table and can be easily modified for any of your needs.</p>
+  </div>
+
+  <div class="project-card">
+    <h4>[Squish](https://github.com/anexpia/Squish)</h4>
+    <p>
+      <small>This is a fork of <b>[Squash](https://github.com/Data-Oriented-House/Squash)</b>.</small>\
+      Its an optimized and extended fork with added features such as Deduplication, Support for new type solver, and overall more friendly API.
+    </p>
+  </div>
+
+  <div class="project-card">
+    <h4>[MoreEditors](https://create.roblox.com/store/asset/8730655360/MoreEditors)</h4>
+    <p>A plugin that adds draggers for beams, lights, stellar bodies (sun & moon), and moving objects along 2 axes.</p>
+    <div class="project-card-media">
+      <video controls class="basicimagestyle">
+        <source src={require('@site/static/videos/moreeditors_brief.mp4').default} type="video/mp4" />
+      </video>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <h4>[TextWrapper](https://devforum.roblox.com/t/textwrapper-a-module-to-wrap-text-into-lines-similar-to-textlabels/3637151?silent=true)</h4>
+    <p>This is a module that splits provided text into multiple lines efficiently. It supports rich text and can also provide offsets of characters to find within the text</p>
+    <div class="project-card-media">
+      <video controls class="basicimagestyle">
+        <source src={require('@site/static/videos/textwrapperexample.mp4').default} type="video/mp4" />
+      </video>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <h4>Seamless Rig Updater</h4>
+    <p>Updates rigs instantly without using relying on `Humanoid:ReplaceBodyPartR15()` or risking humanoid dying when replacing torso / head.</p>
+    <div class="project-card-media">
+      <video controls class="basicimagestyle">
+        <source src={require('@site/static/videos/characterloader.mp4').default} type="video/mp4" />
+      </video>
+    </div>
+  </div>
+</div>
+
+<div class='separatorline'/>
+
+## Other
+
+<div class="image-grid">
+  <div class="image-card">
     <img 
       src="/img/sg_logbook.png" 
       alt="booky!" 
       class="basicimagestyle zoom-image"
     />
+    <div class='baseimagecaption'>
+      "Logbook" UI in **Spontaneous Generation**. designed and scripted by me.
+    </div>
   </div>
-  <div style={{ flex: '1', minWidth: '300px', maxWidth: '600px' }}>
+  <div class="image-card">
     <img 
       src="/img/sg_commandpanel.png" 
       alt="cool stuff!" 
       class="basicimagestyle zoom-image"
     />
+    <div class='baseimagecaption'>
+      "Command Panel" UI in **Spontaneous Generation**. designed and scripted by me.
+    </div>
   </div>
-</div>
-
-### Modelling
-<div style={{ 
-  display: 'flex', 
-  gap: '1rem', 
-  justifyContent: 'center', 
-  flexWrap: 'wrap',
-  marginTop: '2rem' 
-}}>
-  <div style={{ flex: '1', minWidth: '300px', maxWidth: '600px' }}>
+  <div class="image-card">
     <img 
       src="/img/sg_worldalter.png" 
       alt="cool stuff!" 
       class="basicimagestyle zoom-image"
     />
-    <p class='baseimagecaption'>
-      technically not a build, its procedurally generated but i just wanted to show it off.
-    </p>
+    <div class='baseimagecaption'>
+      ..not really a UI. It's procedurally generated but I just wanted to show it off.
+    </div>
   </div>
-  <div style={{ flex: '1', minWidth: '300px', maxWidth: '600px' }}>
-    <img 
-      src="/img/pscp_689.png" 
-      alt="cool stuff!" 
-      class="basicimagestyle zoom-image"
-    />
-  </div>
-  <div style={{ flex: '1', minWidth: '300px', maxWidth: '600px' }}>
-    <img 
-      src="/img/pscp_lczhallsideroom.png" 
-      alt="cool stuff!" 
-      class="basicimagestyle zoom-image"
-    />
-  </div>
-  <div style={{ flex: '1', minWidth: '300px', maxWidth: '600px' }}>
-    <img 
-      src="/img/pscp_SLA.png" 
-      alt="cool stuff!" 
-      class="basicimagestyle zoom-image"
-    />
-  </div>
-   <div style={{ flex: '1', minWidth: '300px', maxWidth: '600px' }}>
-    <img 
-      src="/img/pscp_propkit.png" 
-      alt="cool stuff!" 
-      class="basicimagestyle zoom-image"
-    />
-    <p class='baseimagecaption'>
-      Prop kit used for **Project: SCP**. collaborative effort with multiple other people.
-    </p>
+  <div class="image-card">
+    <video controls class="basicimagestyle">
+      <source src={require('@site/static/videos/abilityui.mp4').default} type="video/mp4" />
+    </video>
   </div>
 </div>

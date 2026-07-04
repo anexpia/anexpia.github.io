@@ -6,8 +6,9 @@ import UnderConstruction from '@site/src/components/stubpage';
 
 <div style={{textAlign: 'center', fontSize: '1.1rem'}}>
     <div style={{fontSize: '1.5rem', fontWeight: '700'}}>
-        Hi there! I'm <span style={{color: 'var(--ifm-color-primary-light)', textShadow: '0 0 10px rgba(255, 150, 211, 0.5)'}}> anexpia! </span>\
-         <small><span style={{fontSize: '0.75rem', opacity:'0.25'}}>probably a cat.</span></small>
+        Hi there! I'm <span style={{color: 'var(--ifm-color-primary-light)', textShadow: '0 0 10px rgba(255, 150, 211, 0.5)'}}> anexpia! </span>
+        
+        {/* <small><span style={{fontSize: '0.75rem', opacity:'0.25'}}>probably a cat.</span></small> */}
     </div>
    
 
@@ -32,28 +33,27 @@ import UnderConstruction from '@site/src/components/stubpage';
             <video controls class="basicimagestyle">
                 <source src={require('@site/static/videos/lagcompbullets.mp4').default} type="video/mp4" />
             </video>
-            <p class='baseimagecaption'>
+            <div class='baseimagecaption'>
             Server-authoritative projectiles.
-            </p>
+            </div>
         </div>
 
         <div style={{ flex: '1', minWidth: '300px', maxWidth: '600px' }}>
-            <img 
-            src="/img/sg_logbook.png" 
-            alt="cool stuff!" 
-            class="basicimagestyle zoom-image"
-            />
+            <video controls class="basicimagestyle">
+                <source src={require('@site/static/videos/csgalgorithmv2-compressed.mp4').default} type="video/mp4" />
+            </video>
+            <div class='baseimagecaption'>
+            CSG Library written in Luau.
+            </div>
         </div>
-
+        
         <div style={{ flex: '1', minWidth: '300px', maxWidth: '600px' }}>
-            <img 
-            src="/img/pscp_propkit.png" 
-            alt="cool stuff!" 
-            class="basicimagestyle zoom-image"
-            />
-            <p class='baseimagecaption'>
-            Prop kit used for Project: SCP. collaborative effort with multiple other people.
-            </p>
+            <video controls class="basicimagestyle">
+                <source src={require('@site/static/videos/markuademo.mp4').default} type="video/mp4" />
+            </video>
+            <div class='baseimagecaption'>
+            Markua: markup text formatting in Luau.
+            </div>
         </div>
     </div>
 
